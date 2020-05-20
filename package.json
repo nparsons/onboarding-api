@@ -21,6 +21,11 @@
   ],
   "author": "Jan Devsmith <jdevsmith@example.org>",
   "license": "ISC",
+  "assets": {
+    "diagram": "OnboardingActivity.png",
+    "alps": "onboardingAPI-alps.json",
+    "apiDocs": "onboarding-alps.md"
+  },
   "bugs": {
     "url": "https://github.com/nparsons/onboarding-api/issues"
   },
