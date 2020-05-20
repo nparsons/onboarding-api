@@ -1,0 +1,165 @@
+{
+  "alps": {
+    "version": "1.0",
+    "title": "Weather API",
+    "doc": {
+      "type": "text",
+      "value": "ALPS Profile for BigCo's Weather API"
+    },
+    "descriptors": [
+      {
+        "id": "id",
+        "type": "semantic",
+        "text" : "Weather condition id."
+      },
+      {
+        "id": "name",
+        "type": "semantic",
+        "text" : "name of location"
+      },
+      {
+        "id": "lat",
+        "type": "semantic",
+        "text" : "latitude of location"
+      },
+      {
+        "id": "lon",
+        "type": "semantic",
+        "text" : "latitude of location"
+      },
+      {
+        "id": "zipcode",
+        "type": "semantic",
+        "text" : "US mail ZIP Code"
+      },
+      {
+        "id": "weatherData",
+        "type": "group",
+        "descriptors" : [
+          {
+            "href": "#identifier"
+          }
+        ]
+      },
+      {
+        "id": "WIP",
+        "type": "group"
+      },
+      {
+        "id": "customerData",
+        "type": "group"
+      },
+      {
+        "id": "accountData",
+        "type": "group"
+      },
+      {
+        "id": "finalizeWIP",
+        "type": "group"
+      },
+      {
+        "id": "cancelWIP",
+        "type": "group"
+      },
+      {
+        "id": "startOnboarding",
+        "type": "safe",
+        "rtn": "",
+        "descriptors": [
+          {
+            "href": "#identifier"
+          }
+        ]
+      },
+      {
+        "id": "collectCustomerData",
+        "type": "safe",
+        "rtn": "",
+        "descriptors": [
+          {
+            "href": "#identifier"
+          },
+          {
+            "href": "#name"
+          },
+          {
+            "href": "#email"
+          }
+        ]
+      },
+      {
+        "id": "saveToWIP",
+        "type": "unsafe",
+        "rtn": "",
+        "descriptors": [
+          {
+            "href": "#identifier"
+          },
+          {
+            "href": "#name"
+          },
+          {
+            "href": "#email"
+          }
+        ]
+      },
+      {
+        "id": "collectAccountData",
+        "type": "safe",
+        "rtn": "",
+        "descriptors": [
+          {
+            "href": "#identifier"
+          },
+          {
+            "href": "#region"
+          },
+          {
+            "href": "#discount"
+          }
+        ]
+      },
+      {
+        "id": "saveToWIP",
+        "type": "unsafe",
+        "rtn": "",
+        "descriptors": [
+          {
+            "href": "#identifier"
+          },
+          {
+            "href": "#region"
+          },
+          {
+            "href": "#discount"
+          }
+        ]
+      },
+      {
+        "id": "completeOnboarding",
+        "type": "unsafe",
+        "rtn": "",
+        "descriptors": [
+          {
+            "href": "#identifier"
+          }
+        ]
+      },
+      {
+        "id": "goHome",
+        "type": "safe",
+        "rtn": ""
+      },
+      {
+        "id": "abandonOnboarding",
+        "type": "unsafe",
+        "rtn": "",
+        "descriptors": [
+          {
+            "href": "#identifier"
+          }
+        ]
+      }
+    ]
+  }
+}
